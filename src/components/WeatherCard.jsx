@@ -26,7 +26,7 @@ const WeatherCard = () => {
     const [location, setLocation] = useState(null);
     const [windDegree, setWindDegree] = useState(null);
 
-    const api_key = process.env.REACT_APP_OPENWEATHER_API_KEY;
+    const api_key = import.meta.env.VITE_REACT_APP_API_KEY;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchQuery}&units=Metric&appid=${api_key}`
 
     const fetchCityData = async () => {
