@@ -1,8 +1,75 @@
-# React + Vite
+# React Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This simple app can check the weather for cities in the world, it also display a weather details and weather icon.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Folder Structure](#folder-structure)
+- [Features](#features)
+- [Coding Style](#coding-style)
+- [Deployment](#deployment)
+- [License](#license)
+
+## Getting Started
+
+```bash
+# clone the project
+https://github.com/swiftah20/react-weatherapp.git
+# run the project
+npm run dev
+```
+
+## Prerequisites
+- [React & Vite](https://vitejs.dev/guide/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Material Tailwind](https://www.material-tailwind.com/)
+- [Axios](https://axios-http.com/)
+- [React Toastify](https://www.npmjs.com/package/react-toastify)
+
+
+## Folder Structures
+```
+weather-app        
+├── public
+│   └── cloud.svg
+├── src
+│   ├── assets
+│   │   ├── icons
+│   │   │   ├── cloudy.png
+│   │   │   ├── drizzle.png
+│   │   │   └── ...
+│   │   └── images
+│   │       └── sky.jpg
+│   ├── components
+│   │   ├── WeatherCard.jsx
+│   │   └── WeatherData.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+└── README.md
+```
+
+## Features
+
+- Find almost all cities in the world.
+- Equipped with weather details.
+- Displays an attractive weather icon.
+- Attactive notification.
+
+## Coding Style
+ESlint + Prettier
+
+## Deployment
+```bash
+# building for deployment
+npm run build
+```
+
+## License
+- API from [OpenWeather.org](https://openweathermap.org/)
+- Weather Icon from [Iconixar](https://www.flaticon.com/authors/iconixar)
