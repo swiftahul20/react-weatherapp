@@ -9,6 +9,9 @@ This simple app can check the weather for cities in the world, it also display a
 - [Folder Structure](#folder-structure)
 - [Features](#features)
 - [Coding Style](#coding-style)
+- [Code Overview](#code-overview)
+  - [Fetching Weather Data](fetching-weather-data)
+  - [Displaying Weather Data](displaying-weather-data)   
 - [Deployment](#deployment)
 - [License](#license)
 
@@ -73,6 +76,28 @@ weather-app
 
 ### Coding Style
 ESlint + Prettier
+
+### Code Overview
+
+The `WeatherCard` component is the main component of the app. It handles the user input, fetches the weather data from the OpenWeather API, and displays the weather information.
+
+#### Fetching Weather Data
+
+The `fetchCityData` function is responsible for fetching the weather data from the OpenWeather API. It uses the `axios` library to make the API request. The API key is stored in the `.env` file.
+
+The `url` variable is constructed using the city name entered by the user and the API key. The `async/await` syntax is used to make the API request and handle the response.
+
+If the API request is successful, the `setCityData`, `getWeather`, `getCountryName`, `setIcon`, and `setWindDegree` functions are called to update the state of the component with the weather data.
+
+If the API request fails, an error message is displayed by `Toastify` to the user.
+
+#### Displaying Weather Data
+
+The `WeatherData` component is responsible for displaying the weather data. It receives the `cityData`, `weather`, `icon`, and `windDegree` props from the `WeatherCard` component.
+
+The `WeatherData` component uses the `useEffect` hook to fetch the weather data from the OpenWeather API when the component is first rendered. The `useEffect` hook is also used to update the weather data when the `cityData` prop changes.
+
+The `WeatherData` component uses the data from props passing from `WeatherCard` component.
 
 ### Deployment
 ```bash
