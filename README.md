@@ -14,22 +14,32 @@ This simple app can check the weather for cities in the world, it also display a
 
 ## Getting Started
 
-```bash
-# clone the project
-https://github.com/swiftah20/react-weatherapp.git
-# run the project
-npm run dev
-```
-
-## Prerequisites
+### Prerequisites
 - [React & Vite](https://vitejs.dev/guide/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Material Tailwind](https://www.material-tailwind.com/)
 - [Axios](https://axios-http.com/)
 - [React Toastify](https://www.npmjs.com/package/react-toastify)
 
+### Installation
+```bash
+# clone the project
+https://github.com/swiftah20/react-weatherapp.git
+# move directory
+cd weather-app
+# install
+npm install
+```
 
-## Folder Structures
+### Usage
+```bash
+# start the development server
+# localhost:5173
+npm run dev
+```
+
+
+### Folder Structures
 ```
 weather-app        
 ├── public
@@ -54,17 +64,17 @@ weather-app
 └── README.md
 ```
 
-## Features
+### Features
 
 - Find almost all cities in the world.
 - Equipped with weather details.
 - Displays an attractive weather icon.
 - Attactive notification.
 
-## Coding Style
+### Coding Style
 ESlint + Prettier
 
-## Deployment
+### Deployment
 ```bash
 # building for deployment
 npm run build
