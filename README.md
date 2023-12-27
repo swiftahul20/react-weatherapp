@@ -42,7 +42,7 @@ npm run dev
 ```
 
 
-### Folder Structures
+### Folder Structure
 ```
 weather-app        
 ├── public
